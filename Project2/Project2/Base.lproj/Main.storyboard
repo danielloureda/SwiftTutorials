@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="OUO-qu-UKE">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X86-zv-90s">
+                                <rect key="frame" x="200" y="125" width="200" height="100"/>
+                                <state key="normal" image="us"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BMT-0e-hKC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PVL-Fd-gPL">
+                                <rect key="frame" x="200" y="377" width="200" height="100"/>
+                                <state key="normal" image="us"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jiV-hu-TWi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B1y-vR-7Sq">
+                                <rect key="frame" x="200" y="251" width="200" height="100"/>
+                                <state key="normal" image="us"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E3t-7U-nIl"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Your current score is 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJ2-yT-vIz">
+                                <rect key="frame" x="279" y="84" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="B1y-vR-7Sq" firstAttribute="top" secondItem="X86-zv-90s" secondAttribute="bottom" constant="26" id="25r-F5-Ljt"/>
+                            <constraint firstItem="QJ2-yT-vIz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4oU-kg-ffA"/>
+                            <constraint firstItem="PVL-Fd-gPL" firstAttribute="top" secondItem="B1y-vR-7Sq" secondAttribute="bottom" constant="26" id="CGj-LW-1bE"/>
+                            <constraint firstItem="QJ2-yT-vIz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Ej4-fW-J82"/>
+                            <constraint firstItem="X86-zv-90s" firstAttribute="top" secondItem="QJ2-yT-vIz" secondAttribute="bottom" constant="20" id="Gnb-AL-kxz"/>
+                            <constraint firstItem="PVL-Fd-gPL" firstAttribute="centerX" secondItem="B1y-vR-7Sq" secondAttribute="centerX" id="SL5-mn-3W7"/>
+                            <constraint firstItem="B1y-vR-7Sq" firstAttribute="centerX" secondItem="X86-zv-90s" secondAttribute="centerX" id="fI8-BP-Y6q"/>
+                            <constraint firstItem="X86-zv-90s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sIK-iv-jAk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="mNa-FI-L1p"/>
+                    <connections>
+                        <outlet property="button1" destination="X86-zv-90s" id="5yN-OS-ILR"/>
+                        <outlet property="button2" destination="B1y-vR-7Sq" id="rhg-BU-IVs"/>
+                        <outlet property="button3" destination="PVL-Fd-gPL" id="mkk-F5-QSP"/>
+                        <outlet property="scoreLabel" destination="QJ2-yT-vIz" id="pMr-BX-nVc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1117" y="387"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iZo-qb-yM9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OUO-qu-UKE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1hB-M5-DA3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hHW-CN-FoG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6ij-e5-Cme" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="1047"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="us" width="200" height="100"/>
+    </resources>
+</document>
